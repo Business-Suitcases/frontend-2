@@ -18,49 +18,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'SF Pro Display', sans-serif;
-    color: #000;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-}
-
 
 .background {
-    background-color: #ffffff;
     
-    background-image: url('/src/background-pattern.png'); /* Здесь нужно использовать путь к вашему фоновому изображению с буквами */
+    background-image: url('C:/Users/kcudr/OneDrive/Рабочий стол/Project_XD/frontend 2/public/images/fon.png'); /* Здесь нужно использовать путь к вашему фоновому изображению с буквами */
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -69,79 +30,6 @@ body, html {
     justify-content: center;
 }
 
-.login-box {
-    /* display: flex; */
-    /* align-items: center; */
-    text-align: center;
-    /* margin: auto; */
-    background: rgba(255, 255, 255, 0.95);
-    padding: none;
-    /* margin: auto; */
-    border-style: dashed;
-    border-color: blue;
-    border-width: 1px;
-    width: 800px;
-    height: 500px;
-    /* box-shadow: 0 15px 25px rgba(0,0,0,0.5); */
-    align-items: center;
-
-}
-
-.container {
-    padding-top: 70px;
-    
-}
-
-h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 34px;
-}
-
-p{
-    font-weight: 700;
-    font-size: 17px;
-    padding: 30px;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-}
-
-.input-group input {
-
-    width: 50%;
-    padding: 2px;
-    box-sizing: border-box;
-    height: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: 1px solid #ccc;
-    border-radius: none;
-}
-
-input:focus{
-    border-width: 2px;
-    border-color: #0016B6;
-    outline: none;
-}
-
-button {
-    margin-top: 10px;
-    width: 130px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    background-color: blue;
-    color: white;
-    border-radius: none;
-    cursor: pointer;
-}
-
-button:active {
-    background-color: #0016B6;
+p {
+    size: 80pi;
 }
