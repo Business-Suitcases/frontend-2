@@ -1,0 +1,89 @@
+.right-background-container {
+    /* Рабочая область */
+
+position: absolute;
+width: 1570px;
+height: 1080px;
+left: 350px;
+top: 0px;
+
+background: #EDEDED;
+
+}
+
+.position-side-text {
+/* Frame 50 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 731px;
+
+position: absolute;
+width: 1370px;
+height: 60px;
+left: 100px;
+top: 130px;
+
+}
+
+.top-side-text {
+    /* Высшая математика */
+
+width: 624px;
+height: 60px;
+
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height */
+
+color: #363636;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.btn-poz {
+/* Добавить задание */
+
+position: absolute;
+width: 183px;
+height: 20px;
+left: 100px;
+top: 220px;
+
+border-radius: 4px;
+
+}
+
+.btn-zad {
+    /* Добавить задание */
+
+width: 158px;
+height: 21px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15x;
+/* identical to box height */
+
+color: #363636;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
