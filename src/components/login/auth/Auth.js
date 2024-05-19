@@ -1,6 +1,40 @@
 import './Auth.css'
+import React, { useState } from 'react';
+import { useAuth } from '../../../context/AuthContext'
+
 
 export default function Auth(){
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const auth = useAuth();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await auth.login(username, password);
+      alert('Login successful!');
+      // Перенаправить пользователя или выполнить другие действия
+    } catch (err) {
+      alert('Failed to login: ' + err.message);
+    }
+  };
+
+  const handleLogout = async (e) => {
+    e.preventDefault();
+
+    try {
+      await auth.logout();
+      alert('Unloginned succsessfully!');
+      // Перенаправить пользователя или выполнить другие действия
+    } catch (err) {
+      alert('Failed to exit: ' + err.message);
+    }
+  };
+  
+
+
     return (
         <div className="auth">
             <div className="text-down">
@@ -20,11 +54,11 @@ export default function Auth(){
                     <h1>Другие способы аутентификации:</h1>
                 </div>
                 <div className="auth__form">
-                    <form className="login-form">
-                        <input type="text" placeholder="Почта" className="inptPoch"></input>
-                        <input type="text" placeholder="Пароль" className="inptPar"></input>
+                    <form className="login-form" onSubmit={handleSubmit}>
+                        <input type="text" placeholder="Почта" className="inptPoch" value={username} onChange={(e) => setUsername(e.target.value)}></input>
+                        <input type="text" placeholder="Пароль" className="inptPar" value={password} onChange={(e) => setPassword(e.target.value)}></input>
                         <button className='button'>Войти</button>
-                        <button className='buttonG'>Войти</button>
+                        <button className='buttonG' onClick={handleLogout}>Войти</button>
                 <button className='buttonT'>Войти</button>
                     </form>
                 </div>

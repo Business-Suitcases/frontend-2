@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 .background {
     
-    background-image: url('C:/Users/kcudr/OneDrive/Рабочий стол/Project_XD/frontend 2/public/images/fon.png'); /* Здесь нужно использовать путь к вашему фоновому изображению с буквами */
+    background-image: url('../../../public/images/fon.png'); /* Здесь нужно использовать путь к вашему фоновому изображению с буквами */
     background-size: cover;
     height: 100vh;
     width: 100vw;

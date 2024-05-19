@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import 'C:/Users/kcudr/OneDrive/Рабочий стол/Project_XD/frontend 2/src/components/home/right-side/RSide.css';
+import '../../../../src/components/home/right-side/RSide.css';
 import ModalComponent from './okno';
 import { Plus } from 'lucide-react';
 
