@@ -52,8 +52,12 @@ flex-grow: 0;
 
 }
 
+.btn-zad {
+    border: none;
+}
+
 .btn-poz {
-/* Добавить задание */
+
 
 position: absolute;
 width: 183px;
@@ -65,17 +69,19 @@ border-radius: 4px;
 
 }
 
-.btn-zad {
-    /* Добавить задание */
 
-width: 158px;
+
+.btn-text {
+/* Добавить задание */
+
+width: 170px;
 height: 21px;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 12px;
-line-height: 15x;
+font-size: 18px;
+line-height: 21px;
 /* identical to box height */
 
 color: #363636;
@@ -84,6 +90,21 @@ color: #363636;
 /* Inside auto layout */
 flex: none;
 order: 1;
+flex-grow: 0;
+
+}
+.btn-plus {
+/* Плюсик */
+position: center;
+width: 24px;
+height: 24px;
+left: 250px;
+top: 500px;
+
+
+/* Inside auto layout */
+flex: auto;
+order: 0;
 flex-grow: 0;
 
 }
