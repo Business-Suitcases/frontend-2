@@ -1,0 +1,94 @@
+/* Стили для модального окна */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    z-index: 1; /* Расположение на переднем плане */
+    left:185px;
+    top: 0;
+    width: 100vw; /* Полная ширина */
+    height: 100vh; /* Полная высота */
+    background-color: rgba(0,0,0,0.1); /* Черный фон с прозрачностью */
+
+    
+
+        }
+  
+  /* Стиль модального содержимого */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 471px; /* Задание фиксированной ширины */
+    height: 502px; /* Задание фиксированной высоты */
+
+    text-align: center;
+
+    font-family: 'Unbounded';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: #363636;
+  }
+
+.tagPicker{
+    text-align: left;
+
+    
+}
+
+/* Стилизация надписи над заголовком */
+.title{     
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 22px;
+    padding-bottom: 5px;
+
+}
+
+/* Стилизация инпута тайтла */
+.titleInput{
+
+
+width: 391px;
+height: 38px;
+left: 62px;
+top: 173px;
+
+background: #E6E6E6;
+border-radius: 8px;
+border: none;
+
+}
+  
+  /* Курсор-крестик (закрытие) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+ .tagAndTg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+ }
+
+ .tg{
+    position: relative;
+    left: 128px;
+    top: -50px;
+ }
+
+ .subjectPick{
+ }
+  

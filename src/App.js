@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import SchedulePage from './pages/SchedulePage';
 import LoginPage from './pages/LoginPage';
 import { AuthProvider } from './context/AuthContext.js';
+import Sandbox from './components/sandbox_page/sandbox.js';
 
 
 function App() {

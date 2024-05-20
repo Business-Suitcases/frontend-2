@@ -1,0 +1,66 @@
+.tag-picker {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .selected-tag {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+
+  /* СТАВИМ ABSOLUTE ЧТОБЫ НАМ НЕ ПЕРЕМЕЩАЛО ДРУГИЕ КНОПКИ И КОМПОНЕНТЫ */
+  .tag-list {
+    position: absolute;           
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    width: 299px;
+  }
+  
+  .tag-item {
+    
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background: #E0F7FA; */
+  }
+  
+  
+  .testwork {
+    background: #e3caf7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+  }
+  
+  .labwork {
+    background: #dfffe0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+  }
+
+  .homework {
+    position: relative;
+    background: #d0eaff;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 281px;
+  }

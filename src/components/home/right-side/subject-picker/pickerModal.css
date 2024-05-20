@@ -1,0 +1,29 @@
+
+  
+  
+
+  
+
+  /* СТАВИМ ABSOLUTE ЧТОБЫ НАМ НЕ ПЕРЕМЕЩАЛО ДРУГИЕ КНОПКИ И КОМПОНЕНТЫ */
+  .tag-list {
+    position: absolute;           
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    width: 299px;
+  }
+  
+  
+
+
+  .subject {
+    position: relative;
+    background: #E6E6E6;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 281px;
+  }

@@ -6,9 +6,10 @@ import { Plus } from 'lucide-react';
 
 
 export default function RSide(){
+
     const [isOpen, setIsOpen] = useState(false)
 
-    const handleOpenModal = () => setIsOpen(!isOpen)
+     function handleOpenModal() { setIsOpen(!isOpen) }
     return (
         <div className='right-background-container'>
             <div>
@@ -26,7 +27,7 @@ export default function RSide(){
 
                 </button>
             </div>
-            {isOpen ? <ModalComponent/> : ''}
+            {isOpen ? <ModalComponent handleOpenModal={handleOpenModal}/> : ''}
         </div>
     )
 }

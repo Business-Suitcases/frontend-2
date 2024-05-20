@@ -1,6 +1,8 @@
 .zz {
 /* Zipper */
 
+
+
 position: absolute;
 width: 146px;
 height: 45px;
@@ -29,7 +31,7 @@ border: 2px linear-gradient(95.43deg, #D6FF7F 0%, #00B3CC 100%);
     /* Боковое меню */
 
 box-sizing: border-box;
-
+z-index: 2;
 position: absolute;
 width: 350px;
 height: 1080px;
