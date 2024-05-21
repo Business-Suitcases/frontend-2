@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
@@ -37,4 +37,11 @@ body {
   .selected-tag{
     font-size: 17px;
     width: 281px;
+  }
+
+  .subject{
+  }
+
+  .tag-list{
+    
   }

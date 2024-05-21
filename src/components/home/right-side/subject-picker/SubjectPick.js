@@ -12,7 +12,7 @@ const tags = [
 ];
 
 function SubjectPick(props)  {  //В пропсах принимается handleSelectTag
-  const [selectedTag, setSelectedTag] = useState("Домашнее задание");
+  const [selectedTag, setSelectedTag] = useState("Высшая математика");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);

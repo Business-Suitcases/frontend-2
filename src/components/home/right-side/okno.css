@@ -91,4 +91,31 @@ border: none;
 
  .subjectPick{
  }
+
+ .gotovoBtn{
+    /* Готово кнопка */
+
+    position: relative;
+    width: 123px;
+    height: 38px;
+    background: #363636;
+    border-radius: 8px;
+
+    /* Готово */
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+color: #FFFFFF;
+
+
+ }
+
+ .gotovoBtn:hover{
+    cursor: pointer;
+ }
   

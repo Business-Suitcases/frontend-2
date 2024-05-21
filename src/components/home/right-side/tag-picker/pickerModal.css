@@ -41,6 +41,7 @@
     font-size: 17px;
     width: 281px;
     position: relative;
+    text-align: center;
   }
   
   .labwork {
@@ -52,6 +53,7 @@
     font-size: 17px;
     width: 281px;
     position: relative;
+    text-align: center;
   }
 
   .homework {
@@ -63,4 +65,5 @@
     border-radius: 5px;
     cursor: pointer;
     width: 281px;
+    text-align: center;
   }

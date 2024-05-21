@@ -12,6 +12,7 @@
     background: white;
     border-radius: 5px;
     width: 299px;
+    z-index: 1;
   }
   
   

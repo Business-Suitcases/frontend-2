@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   
   .label {
@@ -37,5 +38,6 @@ body {
   .selected-tag{
     font-size: 17px;
     width: 281px;
+    text-align: center;
   }
   

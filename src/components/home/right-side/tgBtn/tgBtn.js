@@ -48,7 +48,7 @@ import { BsDisplay } from 'react-icons/bs';
 import './tgBtn.css';
 import { fontFamily, positions } from '@mui/system';
 
-const TelegramButton = () => {
+const TelegramButton = (props) => {
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState('');
 
@@ -62,6 +62,7 @@ const TelegramButton = () => {
 
   const handleKeyDown = (e) =>{ //Эта функция проверяет, какая кнопка была нажата, и если это энтер, то закрывает модальное окно
     if (e.key === "Enter") {
+        props.setLink(inputValue);
         handleCloseModal();
       }
   };
