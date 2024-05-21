@@ -18,6 +18,7 @@ function App() {
             <Route path="/schedule" element={<SchedulePage />} />
           </Route>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/sandbox" element={<Sandbox />} />
           <Route path="/dd" element={<HomePage />} />
         </Routes>
       </Router>

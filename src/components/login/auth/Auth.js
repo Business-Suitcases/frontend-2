@@ -1,6 +1,7 @@
 import './Auth.css'
 import React, { useState } from 'react';
 import { useAuth } from '../../../context/AuthContext'
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Auth(){
@@ -9,13 +10,19 @@ export default function Auth(){
   const [password, setPassword] = useState('');
   const auth = useAuth();
 
+
+    const navigateMe = useNavigate();
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    
+
     try {
       await auth.login(username, password);
-      alert('Login successful!');
-      // Перенаправить пользователя или выполнить другие действия
+      navigateMe('/home')
+
     } catch (err) {
       alert('Failed to login: ' + err.message);
     }
@@ -54,10 +61,10 @@ export default function Auth(){
                     <h1>Другие способы аутентификации:</h1>
                 </div>
                 <div className="auth__form">
-                    <form className="login-form" onSubmit={handleSubmit}>
+                    <form className="login-form">
                         <input type="text" placeholder="Почта" className="inptPoch" value={username} onChange={(e) => setUsername(e.target.value)}></input>
                         <input type="text" placeholder="Пароль" className="inptPar" value={password} onChange={(e) => setPassword(e.target.value)}></input>
-                        <button className='button'>Войти</button>
+                        <button className='button' onClick={handleSubmit}>Войти</button>
                         <button className='buttonG' onClick={handleLogout}>Войти</button>
                 <button className='buttonT'>Войти</button>
                     </form>

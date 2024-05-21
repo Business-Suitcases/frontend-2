@@ -1,16 +1,19 @@
-import React from 'react'; 
-import { Navigate, Outlet } from 'react-router-dom'; 
-import { useAuth } from './AuthContext'; 
- 
+import React from 'react';  
+import { Navigate, Outlet } from 'react-router-dom';  
+import { useAuth } from './AuthContext';  // Путь измените на актуальный для вашего проекта
 
-const PrivateRoute = () => { 
-  const { user } = useAuth();
+const PrivateRoute = () => {  
+  const { user } = useAuth(); 
+
+  // Обновляем проверку с учётом новой структуры пользователя
+  console.log(`Значение user.isAuthenticated в PrivateRoute = ${user.isAuthenticated}`); 
+
+  let isAuthenticated = localStorage.getItem('isAuthenticated')   //Удаляем из сторейджа isAuthenticated
+
   
-  console.log(`Значение user в privateRoute = ${user}`)
-
-  return user == true ? <Outlet /> : <Navigate to="/login" />;  //Outlet - штука для рендера дочерних маршрутов
-}; 
- 
+  return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;  // Outlet - штука для рендера дочерних маршрутов 
+};  
+  
 export default PrivateRoute;
 
 
