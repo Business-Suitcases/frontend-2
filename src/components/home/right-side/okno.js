@@ -8,8 +8,6 @@ import MyDatePicker from './datePicker/myDatePicker.js';
  //Придает дейтпикеру человеческий более-менее вид
 
 
-
-
 const ModalComponent = (props) => {
 
   const [selectedTitle, setTitle] = useState('');
@@ -18,26 +16,15 @@ const ModalComponent = (props) => {
       setTitle(event.target.value);
   }
 
- const [selectedTag, setSelectedTag] = useState(''); //Хук-юк, здесь будет хранится переменная, указыввающая на то, какой тэг был выбран
+ const [selectedTag, setSelectedTag] = useState('Домашнее задание'); //Хук-юк, здесь будет хранится переменная, указыввающая на то, какой тэг был выбран
 
 
  const [selectedLink, setLink] = useState('');
 
 
-const [selectedSubject, setSelectedSubject] = useState(''); //Хук юк, тут хранится выбранный предмет
+const [selectedSubject, setSelectedSubject] = useState('Высшая математика'); //Хук юк, тут хранится выбранный предмет
 
  
- const testFunc = () => {                 //Тестовая функция, проверряетт заполнение полей, обязательно удалить потом
-  console.log(`Тэг ${selectedTag}`);
-  console.log(`Предмет ${selectedSubject}`);
-  console.log(`link changed to ${selectedLink}`)
-  console.log(`Дата ${selectedDate}`);
-  console.log(`title changed to ${selectedTitle}`)
- }
-
-
-
-
  const handleSubmit = async (event) => {    //Функция отправки запроса 
   event.preventDefault();
 
@@ -70,6 +57,7 @@ const [selectedSubject, setSelectedSubject] = useState(''); //Хук юк, ту�
     const data = await response.json();
     console.log('Response:', data);
     props.handleOpenModal();
+    props.triggerRender();
   } catch (error) {
     console.error('Error:', error);
   }

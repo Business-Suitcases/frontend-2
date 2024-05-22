@@ -7,9 +7,6 @@ import {DropdownMenu} from './left-side/drop-s';
 const Home = () => { 
     const [title, setTitle] = useState('Высшая математика'); 
  
-    function handleTitleSubject(title){ 
-        setTitle(title); 
-    } 
  
     return ( 
         <div className='back-ground'> 

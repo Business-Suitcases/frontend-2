@@ -26,17 +26,21 @@
 // export default Sandbox;
 
 
-import DropdownMenu from './sandbox_component.js';
+// Сверху функция кнопки для выхода из профиля
 
-const Sandbox = () => {    
+
+// TaskList.js
+import React, { useEffect, useState } from 'react';
+import TaskList from './sandbox_component';
+
+function RenderThat() {
+
+    const [subject, setSubject] = useState('Философия');
     
-        return(
-            <div>   
-                <DropdownMenu testValue={'Вася ты еблан'}></DropdownMenu>
-            </div>
-        )
-    
-    }
-    
-    export default Sandbox;
-    
+
+    return(
+        <TaskList subject={subject}/>
+    )
+}
+
+export default RenderThat;

@@ -2,14 +2,22 @@ import { useState } from 'react';
 import '../../../../src/components/home/right-side/RSide.css';
 import ModalComponent from './okno';
 import { Plus, Proportions } from 'lucide-react';
+import TaskList from './taskList/taskList';
 
 
 
 export default function RSide(props){
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [forceRender, setForceRender] = useState(1); //ForceRender для списка тасков
 
-    const [subjectTitle, setSubjectTitle] = useState('Всшая мотемотика')
+    const triggerRender = () => {
+        let forceTemp = forceRender;
+        setForceRender(forceRender+1);
+        console.log('triggerRender run');
+        console.log(forceRender);
+      };
+
+    const [isOpen, setIsOpen] = useState(false)
 
      function handleOpenModal() { setIsOpen(!isOpen) }
     return (
@@ -26,10 +34,10 @@ export default function RSide(props){
                         <p className='btn-text'>  Добавить задание </p>  
                     </div>
                     <Plus />
-
                 </button>
+                <TaskList subject={props.titleSubject} forceRender={forceRender} triggerRender={triggerRender}/>
             </div>
-            {isOpen ? <ModalComponent handleOpenModal={handleOpenModal}/> : ''}
+            {isOpen ? <ModalComponent handleOpenModal={handleOpenModal} triggerRender={triggerRender}/> : ''}
         </div>
     )
 }

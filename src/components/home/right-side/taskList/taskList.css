@@ -1,0 +1,116 @@
+.app {
+    display: flex;
+  }
+  
+  aside {
+    width: 200px;
+    padding: 10px;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .name{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+  }
+  
+  .deadline{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A0A0A0;
+  }
+
+  .listElement{
+    background-color: #EDEDED;
+    width: 700px;
+    height: 55px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50px;
+  }
+
+  .Контрольная{
+    background-color: #E8DEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+  }
+
+  .Лабораторная{
+    background-color: #DBEDDB;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+  }
+
+  .Домашнее{
+    background-color: #D3E5EF;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    
+  }
+
+  .inputCheckbox{
+    position: relative;
+    right: 35px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D4D4D4;
+  }
+
+  .overFlow{
+    max-height: 400px; /* Установите желаемую высоту окна */
+    width: 2000px;
+    overflow-y: scroll; /* Включаем вертикальную прокрутку */
+  }
+
+  .deadlineDiv{
+    width: 110px;
+    position: relative;
+    left: 3px;
+  }
+  
