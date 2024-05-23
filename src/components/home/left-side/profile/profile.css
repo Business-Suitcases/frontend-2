@@ -1,0 +1,112 @@
+.modalProfile{
+background-color: black;
+}
+
+
+
+.modalOkno{
+    position: relative;
+    left: 100px;
+}
+
+
+.profel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    
+    position: absolute;
+    z-index: 2;
+    width: 157px;
+    left: calc(50% - 157px/2 - 0.5px);
+    top: 45px;
+    
+    background: #FFFFFF;
+    border-radius: 4px;
+    z-index: 0;}
+    
+
+.avat{
+    width: 30px;
+height: 30px;
+
+background: #363636;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+
+.avatar {
+    /* Ава */
+
+width: 30px;
+height: 30px;
+
+background: #363636;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+position: relative;
+right: 175px;
+
+}
+
+.text-v {
+    /* V */
+
+position: relative;
+width: 11px;
+height: 19px;
+left: 9px;
+top: calc(50% - 19px/2 + 0.5px);
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+}
+
+
+.profile {
+    /* Профиль */
+
+
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 19px;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+position: relative;
+z-index: 2;
+width: 175px;
+height: 30px;
+left: 80px;
+top: 50px;
+
+border-radius: 4px;
+z-index: 2;
+
+}

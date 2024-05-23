@@ -28,9 +28,27 @@ function TaskList({subject, forceRender, triggerRender}) {
     }
   }
 
-  useEffect(() => {
+  useEffect(() => {         
     // Функция для получения задач из API
     const fetchTasks = async () => {
+
+        if(subject == 'Ожидающие'){             //Получение ВСЕХ задач 
+
+        try {  setLoading(true);
+        const response = await fetch(`https://anatoliy_ne_prav.loyalpelmen.ru/tasks?sort_by=deadline&in_ascending_order=true&start=1&end=2147483647`);
+        const data = await response.json();
+        
+        setTasks(data);
+      } catch (error) {
+        console.error('Error fetching tasks:', error);
+      } finally {
+        setLoading(false);
+      }
+
+        }
+
+        else
+
       try {
         setLoading(true);
         const response = await fetch(`https://anatoliy_ne_prav.loyalpelmen.ru/tasks/by_lesson?lesson=${encodeURI(subject)}`);

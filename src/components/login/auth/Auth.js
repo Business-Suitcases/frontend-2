@@ -63,7 +63,7 @@ export default function Auth(){
                 <div className="auth__form">
                     <form className="login-form">
                         <input type="text" placeholder="Почта" className="inptPoch" value={username} onChange={(e) => setUsername(e.target.value)}></input>
-                        <input type="text" placeholder="Пароль" className="inptPar" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                        <input type="password" placeholder="Пароль" className="inptPar" value={password} onChange={(e) => setPassword(e.target.value)}></input>
                         <button className='button' onClick={handleSubmit}>Войти</button>
                         <button className='buttonG' onClick={handleLogout}>Войти</button>
                 <button className='buttonT'>Войти</button>
