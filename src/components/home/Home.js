@@ -12,8 +12,6 @@ const Home = () => {
         <div className='back-ground'> 
             <LSide setTitle={setTitle}/>  
             <div> 
-                <h1>Мой список предметов</h1> 
-                <DropdownMenu/> 
             </div> 
             <RSide titleSubject={title}/> 
         </div> 

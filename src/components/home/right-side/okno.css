@@ -1,17 +1,14 @@
 /* Стили для модального окна */
-.modal {
-    display: flex;
+.modalMain {
     justify-content: center;
     align-items: center;
-    position: fixed; 
+    position: relative; 
     z-index: 1; /* Расположение на переднем плане */
-    left:185px;
+    left:0px;
     top: 0;
     width: 100vw; /* Полная ширина */
     height: 100vh; /* Полная высота */
-    background-color: rgba(0,0,0,0.1); /* Черный фон с прозрачностью */
-
-    
+    background-color: rgba(237, 237, 237, 0.75); /* фон с прозрачностью */
 
         }
   
@@ -19,7 +16,7 @@
   .modal-content {
     background-color: #fefefe;
     padding: 20px;
-    border: 1px solid #888;
+    border: none;
     width: 471px; /* Задание фиксированной ширины */
     height: 502px; /* Задание фиксированной высоты */
 
@@ -30,6 +27,11 @@
     font-style: normal;
     font-weight: 700;
     color: #363636;
+
+    position: relative;
+    left: 300px;
+    top: 100px;
+    
   }
 
 .tagPicker{

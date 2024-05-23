@@ -2,8 +2,8 @@
     /* Рабочая область */
 
 position: absolute;
-width: 1570px;
-height: 1080px;
+max-width: 1570px;
+max-height: 1080px;
 left: 350px;
 top: 0px;
 
@@ -107,4 +107,11 @@ flex: auto;
 order: 0;
 flex-grow: 0;
 
+}
+
+.modalBackground{
+    position: relative;
+    width: 1000px;
+    z-index: 1000;
+    background-color: black;
 }

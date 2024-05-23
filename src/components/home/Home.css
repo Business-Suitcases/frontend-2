@@ -23,8 +23,8 @@ time, mark, audio, video {
 .background {
     
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    max-height: 1080px;
+    max-width: 1980px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -71,7 +71,7 @@ const [selectedSubject, setSelectedSubject] = useState('Высшая матем�
 
 
   return (
-    <div className="modal">
+    <div className="modalMain">
       <div className="modal-content">
         <span className="close" onClick={props.handleOpenModal}>&times;</span>
         <h1>Редактировать</h1>
