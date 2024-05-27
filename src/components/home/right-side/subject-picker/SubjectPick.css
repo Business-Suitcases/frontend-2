@@ -14,6 +14,13 @@ body {
     font-family: 'Roboto';
      /* //Это надпись "Тэг" над раскрывающимся списком */
   }
+
+  .tagTagDark{
+    text-align: left;      
+    font-size: 22px;
+    font-family: 'Roboto';
+     /* //Это надпись "Тэг" над раскрывающимся списком */
+  }
   
   .container {
     display: flex;
@@ -39,8 +46,21 @@ body {
     width: 281px;
   }
 
-  .subject{
+  .selected-tagDark{
+    font-size: 17px;
+    width: 281px;
+    background-color: #363636;
   }
+
+  .subject:hover{
+    
+   outline: 1px solid #363636;
+  }
+
+  .subjectDark:hover{
+    
+    outline: 1px solid #EDEDED;
+   }
 
   .tag-list{
     

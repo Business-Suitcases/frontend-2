@@ -1,7 +1,7 @@
 import React from 'react';
 import './profileModal.css';
 
-function Modal({ onClose }) {
+function Modal({ onClose, theme }) {
 
   const handleLogOut = () => {
              localStorage.removeItem('isAuthenticated');
@@ -14,7 +14,7 @@ function Modal({ onClose }) {
     
   return (
         <div className=''>
-        <div className='buttonsDiv'>
+        <div className={`buttonsDiv${theme}`}>
           <button className='editButton'>Редактировать</button>
           <br/>
           <button className='exitButton' onClick={handleLogOut}>Выйти</button>

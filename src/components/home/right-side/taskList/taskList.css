@@ -22,9 +22,8 @@
     padding: 5px 0;
   }
   
-  li:hover {
-    background-color: #f0f0f0;
-  }
+
+  
 
   .name{
     font-family: 'Roboto';
@@ -32,6 +31,16 @@
     font-weight: 500;
     position: relative;
     right: 20px;
+  }
+
+  
+  .nameDark{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+    color: rgba(237, 237, 237, 1);
   }
   
   .deadline{
@@ -49,6 +58,15 @@
     position: relative;
     left: 50px;
   }
+  .listElementDark{
+    background-color: rgba(54, 54, 54, 1);
+    width: 1100px;
+    height: 55px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50px;
+    transition: 0.3s;
+  }
 
   .Контрольная{
     background-color: #E8DEEE;
@@ -64,6 +82,24 @@
     bottom: 20px;
   }
 
+  .Контрольная.работаDark{
+    background-color: rgba(73, 47, 100, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+
+  
+
   .Лабораторная{
     background-color: #DBEDDB;
     padding-left: 10px;
@@ -76,6 +112,22 @@
     text-align: center;
     left: 85px;
     bottom: 20px;
+  }
+
+  .Лабораторная.работаDark{
+    background-color: rgba(44, 89, 63, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
   }
 
   .Домашнее{
@@ -93,6 +145,22 @@
     
   }
 
+  .Домашнее.заданиеDark{
+    background-color: rgba(41, 69, 108, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+
   .inputCheckbox{
     position: relative;
     right: 35px;
@@ -100,6 +168,17 @@
     width: 15px;
     height: 15px;
     border: 1px solid #D4D4D4;
+  }
+
+  .inputCheckboxDark{
+    position: relative;
+    right: 35px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D4D4D4;
+    color: black;
+    background-color: black;
   }
 
   .overFlow{

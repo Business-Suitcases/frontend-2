@@ -21,6 +21,15 @@
     border-radius: 5px;
     width: 299px;
   }
+  .tag-listDark {
+    position: absolute;           
+    border: 1px solid #ccc;
+    z-index: 10;
+    padding: 10px;
+    background: #363636;
+    border-radius: 5px;
+    width: 299px;
+  }
   
   .tag-item {
     
@@ -43,6 +52,32 @@
     position: relative;
     text-align: center;
   }
+
+  .testwork:hover {
+    background: #e3caf7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+    text-align: center;
+    outline: 1px solid #412454;
+  }
+
+  .testworkDark {
+    color: #D5D9E3;
+    background: #492F64;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+    text-align: center;
+  }
   
   .labwork {
     background: #dfffe0;
@@ -56,9 +91,61 @@
     text-align: center;
   }
 
+  .labwork:hover {
+    background: #dfffe0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+    text-align: center;
+    outline: 1px solid #155d33;
+  }
+
+  .labworkDark {
+    color: #D5D9E3;
+    background: #2C593F;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 281px;
+    position: relative;
+    text-align: center;
+  }
+
   .homework {
     position: relative;
     background: #d0eaff;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 281px;
+    text-align: center;
+  }
+
+  .homework:hover {
+    position: relative;
+    background: #d0eaff;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 281px;
+    text-align: center;
+    outline: 1px solid #2e6a9c;
+  }
+
+  .homeworkDark {
+    position: relative;
+    color: #D5D9E3;
+    background: #29456C;
     font-size: 17px;
     padding: 10px;
     margin: 5px 0;

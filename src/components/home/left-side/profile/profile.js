@@ -2,7 +2,7 @@ import {react, useState} from 'react';
 import Modal from './profileModal';
 import './profile.css';
 
-function Profile(){
+function Profile(props){
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -11,17 +11,17 @@ function Profile(){
 
     return(
      <div >
-        <div className='profile' onClick={() => openModal()}>
-             <div className='text'>
+        <div className={`profile${props.theme}`} onClick={() => openModal()}>
+             <div className={`text${props.theme}`}>
                     <h1>Vlad Gavrilenko</h1>
                 </div>
-                <div className='avatar'>
-                    <h1 className='text-v'>V</h1>
+                <div className={`avatar${props.theme}`}>
+                    <h1 className={`text-v${props.theme}`}>V</h1>
                 </div>
         </div>
 
         <div className='modalOkno'>
-        {isModalOpen ? <Modal onClose={closeModal} /> : ''}
+        {isModalOpen ? <Modal onClose={closeModal} theme={props.theme}/> : ''}
         </div>
 
        </div>

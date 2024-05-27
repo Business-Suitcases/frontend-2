@@ -6,14 +6,14 @@ import {DropdownMenu} from './left-side/drop-s';
  
 const Home = () => { 
     const [title, setTitle] = useState('Высшая математика'); 
- 
+    const [theme, setTheme] = useState(' ');
  
     return ( 
         <div className='back-ground'> 
-            <LSide setTitle={setTitle}/>  
+            <LSide setTitle={setTitle} theme={theme} setTheme={setTheme}/>  
             <div> 
             </div> 
-            <RSide titleSubject={title}/> 
+            <RSide titleSubject={title} theme={theme}/> 
         </div> 
     ); 
 } 

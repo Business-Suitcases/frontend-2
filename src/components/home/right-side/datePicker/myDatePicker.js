@@ -6,10 +6,10 @@ import './myDatePicker.css';
 
 // Название MyDatePicker и других компонентов обязательно с большой буквы!
 
-function CustomInput({value, onClick}) {
+function CustomInput({value, onClick, theme}) {
     return(
         <div className='customInputDivs'>   
-            <input value={value} onClick={onClick} readOnly className='customInput'></input>
+            <input value={value} onClick={onClick} readOnly className={`customInput${theme}`}></input>
         </div>
     )
 }
@@ -17,10 +17,10 @@ function CustomInput({value, onClick}) {
 const MyDatePicker = (props) => {
 
     return(<div className='pickerContainer'>
-        <label className='myLabel'>Дата</label>
+        <label className={`myLabel${props.theme}`}>Дата</label>
         <div className='inputGroup'>
         
-        <DatePicker selected={props.selectedDate} onChange={props.handleSelectedDate} customInput={<CustomInput />} className='DatePicker'/>
+        <DatePicker selected={props.selectedDate} onChange={props.handleSelectedDate} customInput={<CustomInput theme={props.theme}/>} className='DatePicker'/>
         <div className='calendarContainer'><CiCalendar/></div>
         </div>
         </div>

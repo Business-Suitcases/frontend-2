@@ -14,6 +14,16 @@
     width: 299px;
     z-index: 1;
   }
+
+  .tag-listDark {
+    position: absolute;           
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #363636;
+    border-radius: 5px;
+    width: 299px;
+    z-index: 1;
+  }
   
   
 
@@ -21,6 +31,18 @@
   .subject {
     position: relative;
     background: #E6E6E6;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 281px;
+  }
+
+  .subjectDark {
+    position: relative;
+    background: #161616;
+    color: #ccc;
     font-size: 17px;
     padding: 10px;
     margin: 5px 0;

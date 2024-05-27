@@ -16,6 +16,20 @@
     background-color: #FFFFFF;
 }
 
+.buttonsDivDark{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    padding-top: 60px;
+    right: 0px;
+    border: 1px solid #363636;
+    border-radius: 8px;
+    width: 276px;
+    height: 115px;
+    align-items: end;
+    background-color: #363636;
+}
+
 
 
 .editButton{

@@ -37,7 +37,7 @@ export default Modal;
 // CSS стили
 const styles = `
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 
@@ -63,8 +63,8 @@ const styles = `
   border-radius: 10px;
   border-width: 3px;
   border-color: black;
-  left: 110px;
-  top: 20px;
+  left: -90px;
+  top: 130px;
 }
 `;
 

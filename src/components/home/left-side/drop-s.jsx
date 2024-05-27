@@ -16,24 +16,24 @@ export function DropdownMenu (props) {  // Изменено для дестру�
       <div onClick={toggleDropdown} style={{ cursor: 'pointer' }}> 
         {isOpen ? <div className='subjects'> 
           <p> 
-            <ChevronDown /> 
+            <ChevronDown className={`chevronDown${props.theme}`} /> 
             <div> 
-              <p className='text_p'>Предметы</p> 
+              <p className={`text_p${props.theme}`}>Предметы</p> 
             </div> 
           </p> 
         </div> :  
         <div> 
           <p>  
-            <ChevronUp   />  
+            <ChevronUp  className={`chevronUp${props.theme}`} />  
             <div> 
-              <p className='text_p'>Предметы</p> 
+              <p className={`text_p${props.theme}`}>Предметы</p> 
             </div> 
           </p> 
         </div> 
         } 
       </div> 
       {isOpen && ( 
-        <ul className='pos-text'> 
+        <ul className={`pos-text${props.theme}`}> 
           <li onClick={() => handleSelectSubject('Высшая математика')}>Высшая Математика</li>    
           <li onClick={() => handleSelectSubject('История')}>История</li> 
           <li onClick={() => handleSelectSubject('ВвИТ')}>ВвИТ</li> 

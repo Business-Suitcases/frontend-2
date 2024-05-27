@@ -95,7 +95,7 @@ const TelegramButton = (props) => {
 const buttonStyle = {
   backgroundColor: '#fff',
   color: '#000',
-  border: '1px solid #000',
+  border: 'none',
   padding: '10px',
   borderRadius: '5px',
   cursor: 'pointer',

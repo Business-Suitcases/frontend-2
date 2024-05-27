@@ -71,21 +71,21 @@ const [selectedSubject, setSelectedSubject] = useState('Высшая матем�
 
 
   return (
-    <div className="modalMain">
-      <div className="modal-content">
+    <div className={`modalMain${props.theme}`}>
+      <div className={`modal-content${props.theme}`}>
         <span className="close" onClick={props.handleOpenModal}>&times;</span>
-        <h1>Редактировать</h1>
+        <h1 className={`h1${props.theme}`}>Редактировать</h1>
 
         <br />
-        <div className='title' ><label>Заголовок</label>
+        <div className={`title${props.theme}`} ><label>Заголовок</label>
         <br/>
-        <input type='text' className='titleInput' onChange={handleSetTitle}></input>
+        <input type='text' className={`titleInput${props.theme}`} onChange={handleSetTitle}></input>
         </div>
-             <div className="tagPicker"><TagPick handleSelectTag={setSelectedTag}/></div>
+             <div className="tagPicker"><TagPick handleSelectTag={setSelectedTag} theme={props.theme}/></div>
                   <div className="tg"><TelegramButton setLink={setLink}/></div>
-            <SubjectPick handleSelectedSubject = {setSelectedSubject} className='subjectPick'/>
+            <SubjectPick handleSelectedSubject = {setSelectedSubject} className='subjectPick' theme={props.theme}/>
             
-             <MyDatePicker selectedDate={selectedDate} handleSelectedDate={setDate}/>
+             <MyDatePicker selectedDate={selectedDate} handleSelectedDate={setDate} theme={props.theme}/>
              <br/>
         <button onClick={handleSubmit} className='gotovoBtn'>Готово</button>
       </div>

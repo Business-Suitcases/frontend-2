@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './taskList.css'
 
-function TaskList({subject, forceRender, triggerRender}) {
+function TaskList({subject, forceRender, triggerRender, theme}) {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -75,12 +75,12 @@ function TaskList({subject, forceRender, triggerRender}) {
       <div className='overFlow'>
       <ul>
         {tasks.map(task => (
-          <li key={task.Task.id} className='listElement'>
-            <input type="checkbox" defaultChecked={false} className='inputCheckbox' onChange={() => deleteTask(task.Task.id)}/>
-            <span className='name'>{task.Task.name}  </span>
+          <li key={task.Task.id} className={`listElement${theme}`}>
+            <input type="checkbox" defaultChecked={false} className={`inputCheckbox${theme}`} onChange={() => deleteTask(task.Task.id)}/>
+            <span className={`name${theme}`}>{task.Task.name}  </span>
             <br />
             <div className='deadlineDiv'><small className='deadline'>{formatDate(task.Task.deadline)}  </small></div>
-            <small className={task.Task.type}>{task.Task.type}</small>
+            <small className={task.Task.type + theme}>{task.Task.type}</small>
           </li>
         ))}
       </ul>

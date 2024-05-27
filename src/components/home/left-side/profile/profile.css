@@ -63,6 +63,25 @@ right: 175px;
 
 }
 
+.avatarDark {
+    /* Ава */
+
+width: 30px;
+height: 30px;
+
+background: #EDEDED;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+position: relative;
+right: 175px;
+
+}
+
 .text-v {
     /* V */
 
@@ -80,6 +99,27 @@ line-height: 19px;
 /* identical to box height */
 
 color: #FFFFFF;
+
+
+}
+
+.text-vDark {
+    /* V */
+
+position: relative;
+width: 11px;
+height: 19px;
+left: 9px;
+top: calc(50% - 19px/2 + 0.5px);
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: black;
 
 
 }
@@ -108,5 +148,32 @@ top: 50px;
 
 border-radius: 4px;
 z-index: 2;
+}
+
+.profileDark {
+    /* Профиль */
+
+
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 19px;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+position: relative;
+z-index: 2;
+width: 175px;
+height: 30px;
+left: 80px;
+top: 50px;
+
+border-radius: 4px;
+z-index: 2;
+color: #EDEDED;
+
 
 }

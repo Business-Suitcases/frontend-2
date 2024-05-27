@@ -28,17 +28,17 @@ function SubjectPick(props)  {  //В пропсах принимается handl
 
   return (
     <div className="tag-picker">
-      <h2 className='tagTag'>Предмет</h2>
-      <div className="selected-tag" onClick={openModal}>
+      <h2 className={`tagTag${props.theme}`}>Предмет</h2>
+      <div className={`selected-tag${props.theme}`} onClick={openModal}>
         {selectedTag}
       </div>
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <div className="tag-list">
+          <div className={`tag-list${props.theme}`}>
             {tags.map((subject) => (
               <div
                 key={subject}
-                className={"subject"} //Вызываем функцию для присвоения имени класса
+                className={`subject${props.theme}`} //Вызываем функцию для присвоения имени класса
                 onClick={() => handleTagClick(subject)}
               >
                 {subject}

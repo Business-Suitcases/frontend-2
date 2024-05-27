@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import SchedulePage from './pages/SchedulePage';
 import LoginPage from './pages/LoginPage';
 import { AuthProvider } from './context/AuthContext.js';
-import Sandbox from './components/sandbox_page/sandbox.js';
 
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
             <Route path="/schedule" element={<SchedulePage />} />
           </Route>
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/sandbox" element={<Sandbox />} />
-          <Route path="/dd" element={<HomePage />} />
+          <Route path="/" element={<LoginPage />} />
         </Routes>
       </Router>
     </AuthProvider>

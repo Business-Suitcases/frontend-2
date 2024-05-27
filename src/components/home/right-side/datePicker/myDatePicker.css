@@ -49,6 +49,20 @@
     border: none;
   }
 
+  .customInputDark{
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Roboto';
+    width: 210px;
+    height: 38px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #363636;
+    color: #EDEDED;
+    border: none;
+  }
+
   .inputGroup{
     display: flex;
   }
@@ -67,6 +81,15 @@
     position: relative;
     left: -210px;
   }
+
+  .myLabelDark {
+    font-size: 22px;
+    font-family: 'Roboto';
+    position: relative;
+    left: -210px;
+    color: #EDEDED;
+  }
+
 
   .pickerContainer{
     z-index: -1;
