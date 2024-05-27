@@ -1,0 +1,192 @@
+/* Стили для модального окна */
+.modalMain {
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; /* Расположение на переднем плане */
+    left:0px;
+    top: 0;
+    width: 100vw; /* Полная ширина */
+    height: 100vh; /* Полная высота */
+    background-color: rgba(237, 237, 237, 0.75); /* фон с прозрачностью */
+
+   }
+
+   .modalMainDark {
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; /* Расположение на переднем плане */
+    left:0px;
+    top: 0;
+    width: 100vw; /* Полная ширина */
+    height: 100vh; /* Полная высота */
+    background-color: rgba(0, 0, 0, 0.35); /* фон с прозрачностью */
+
+   }
+
+  
+
+
+
+
+
+  
+  /* Стиль модального содержимого */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: none;
+    width: 471px; /* Задание фиксированной ширины */
+    height: 502px; /* Задание фиксированной высоты */
+
+    text-align: center;
+
+    font-family: 'Unbounded';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: #363636;
+
+    position: relative;
+    left: 300px;
+    top: 100px;
+    
+  }
+
+
+  .modal-contentDark {
+    background-color: #000000;
+    padding: 20px;
+    border: none;
+    width: 471px; /* Задание фиксированной ширины */
+    height: 502px; /* Задание фиксированной высоты */
+
+    text-align: center;
+
+    font-family: 'Unbounded';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: #363636;
+
+    position: relative;
+    left: 300px;
+    top: 100px;
+    
+  }
+
+.tagPicker{
+    text-align: left;
+
+    
+}
+
+.h1Dark{
+  color: rgba(237, 237, 237, 1);
+}
+
+/* Стилизация надписи над заголовком */
+.title{     
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 22px;
+    padding-bottom: 5px;
+
+}
+
+.titleDark{     
+  text-align: left;
+  font-family: 'Roboto';
+  font-size: 22px;
+  padding-bottom: 5px;
+  color: rgba(237, 237, 237, 1);
+
+}
+
+/* Стилизация инпута тайтла */
+.titleInput{
+
+
+width: 391px;
+height: 38px;
+left: 62px;
+top: 173px;
+
+background: #E6E6E6;
+border-radius: 8px;
+border: none;
+
+}
+
+.titleInputDark{
+
+
+  width: 391px;
+  height: 38px;
+  left: 62px;
+  top: 173px;
+  
+  background: rgba(54, 54, 54, 1);
+  border-radius: 8px;
+  border: none;
+  
+  }
+  
+  /* Курсор-крестик (закрытие) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+ .tagAndTg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+ }
+
+ .tg{
+    position: absolute;
+    bottom: 318px;
+    left: 350px;
+ }
+
+ .subjectPick{
+ }
+
+ .gotovoBtn{
+    /* Готово кнопка */
+
+    position: relative;
+    width: 123px;
+    height: 38px;
+    background: #363636;
+    border-radius: 8px;
+
+    /* Готово */
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+color: #FFFFFF;
+
+
+ }
+
+ .gotovoBtn:hover{
+    cursor: pointer;
+ }
+  

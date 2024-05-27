@@ -1,0 +1,13 @@
+.obl-zad {
+    /* Добавить задание */
+
+position: absolute;
+width: 1101px;
+height: 438px;
+left: calc(50% - 1101px/2 - 134.5px);
+top: calc(50% - 438px/2 - 43px);
+
+background: #FFFFFF;
+border-radius: 12px;
+
+}

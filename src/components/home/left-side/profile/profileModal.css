@@ -1,0 +1,87 @@
+
+
+
+
+.buttonsDiv{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    padding-top: 60px;
+    right: 0px;
+    border: 1px solid #363636;
+    border-radius: 8px;
+    width: 276px;
+    height: 115px;
+    align-items: end;
+    background-color: #FFFFFF;
+}
+
+.buttonsDivDark{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    padding-top: 60px;
+    right: 0px;
+    border: 1px solid #363636;
+    border-radius: 8px;
+    width: 276px;
+    height: 115px;
+    align-items: end;
+    background-color: #363636;
+}
+
+
+
+.editButton{
+    width: 256px;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-width: 0px;
+
+    font-family: 'Roboto';
+    font-weight: 600;
+   
+}
+
+
+.exitButton{
+    width: 256px;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+
+.editButton:hover{
+
+    width: 256px;
+    height: 46px;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+
+.exitButton:hover{
+    width: 256px;
+    height: 46px;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    border-width: 0px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+

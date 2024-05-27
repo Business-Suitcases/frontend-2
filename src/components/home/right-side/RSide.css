@@ -1,0 +1,208 @@
+.right-background-container {
+    /* Рабочая область */
+
+position: absolute;
+width: 1570px;
+height: 780px;
+left: 350px;
+top: 0px;
+
+background-color: #EDEDED;
+
+}
+
+.right-background-containerDark {
+    /* Рабочая область */
+
+position: absolute;
+width: 1570px;
+height: 780px;
+left: 350px;
+top: 0px;
+
+background-color: rgba(54, 54, 54, 1);
+transition: 0.3s;
+
+}
+
+
+.position-side-text {
+/* Frame 50 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 731px;
+
+position: absolute;
+width: 1370px;
+height: 60px;
+left: 100px;
+top: 130px;
+
+
+}
+
+
+
+.top-side-text {
+    /* Высшая математика */
+
+width: 624px;
+height: 60px;
+
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height */
+
+color: #363636;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.top-side-textDark {
+    /* Высшая математика */
+
+width: 624px;
+height: 60px;
+
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height */
+
+color: #ffffff;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+transition: 0.3s;
+
+}
+
+
+.btn-zad {
+    border: none;
+}
+
+.btn-zadDark {
+    border: none;
+    background-color: rgba(54, 54, 54, 1);
+    transition: 0.3s;
+}
+
+.btn-poz {
+
+
+position: absolute;
+width: 183px;
+height: 20px;
+left: 100px;
+top: 220px;
+
+border-radius: 4px;
+
+}
+
+
+
+.btn-text {
+/* Добавить задание */
+
+width: 170px;
+height: 21px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+color: #363636;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.btn-textDark {
+    /* Добавить задание */
+    
+    width: 170px;
+    height: 21px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    color: #ffffff;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    }
+
+.btn-plus {
+/* Плюсик */
+position: center;
+width: 24px;
+height: 24px;
+left: 250px;
+top: 500px;
+
+
+/* Inside auto layout */
+flex: auto;
+order: 0;
+flex-grow: 0;
+
+}
+
+.btn-plusDark {
+    /* Плюсик */
+    position: center;
+    width: 24px;
+    height: 24px;
+    left: 250px;
+    top: 500px;
+    
+    
+    /* Inside auto layout */
+    flex: auto;
+    order: 0;
+    flex-grow: 0;
+    color: white;
+    
+    }
+
+
+.modalBackground{
+    position: relative;
+    width: 1000px;
+    z-index: 1000;
+    background-color: black;
+}

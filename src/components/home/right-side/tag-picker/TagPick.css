@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .tagTag{
+    text-align: left;      
+    font-size: 22px;
+    font-family: 'Roboto';
+     /* //Это надпись "Тэг" над раскрывающимся списком */
+  }
+
+  .tagTagDark{
+    text-align: left;      
+    color: rgba(237, 237, 237, 1);
+    font-size: 22px;
+    font-family: 'Roboto';
+     /* //Это надпись "Тэг" над раскрывающимся списком */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .label {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .selected-tag{
+    font-size: 17px;
+    width: 281px;
+    text-align: center;
+  }
+
+  .selected-tagDark{
+    font-size: 17px;
+    width: 281px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #D7DEDA;
+  }
+  

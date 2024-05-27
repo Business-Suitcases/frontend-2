@@ -1,0 +1,195 @@
+.app {
+    display: flex;
+  }
+  
+  aside {
+    width: 200px;
+    padding: 10px;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+
+  
+
+  .name{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+  }
+
+  
+  .nameDark{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+    color: rgba(237, 237, 237, 1);
+  }
+  
+  .deadline{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A0A0A0;
+  }
+
+  .listElement{
+    background-color: #EDEDED;
+    width: 1100px;
+    height: 55px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50px;
+  }
+  .listElementDark{
+    background-color: rgba(54, 54, 54, 1);
+    width: 1100px;
+    height: 55px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50px;
+    transition: 0.3s;
+  }
+
+  .Контрольная{
+    background-color: #E8DEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+  }
+
+  .Контрольная.работаDark{
+    background-color: rgba(73, 47, 100, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+
+  
+
+  .Лабораторная{
+    background-color: #DBEDDB;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+  }
+
+  .Лабораторная.работаDark{
+    background-color: rgba(44, 89, 63, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+
+  .Домашнее{
+    background-color: #D3E5EF;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    
+  }
+
+  .Домашнее.заданиеDark{
+    background-color: rgba(41, 69, 108, 1);
+    color: rgba(220, 214, 225, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+    font-weight: 500;
+    width: 165px;
+    position: relative;
+    text-align: center;
+    left: 85px;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+
+  .inputCheckbox{
+    position: relative;
+    right: 35px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D4D4D4;
+  }
+
+  .inputCheckboxDark{
+    position: relative;
+    right: 35px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D4D4D4;
+    color: black;
+    background-color: black;
+  }
+
+  .overFlow{
+    max-height: 400px; /* Установите желаемую высоту окна */
+    width: 2000px;
+    overflow-y: scroll; /* Включаем вертикальную прокрутку */
+  }
+
+  .deadlineDiv{
+    width: 110px;
+    position: relative;
+    left: 3px;
+  }
+  

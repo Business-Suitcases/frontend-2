@@ -12,10 +12,25 @@ height: 40px;
 left: 25px;
 top: 93px;
 
-border: 2px solid #FFFFFF;
+border: 1px solid #FFFFFF;
 border-radius: 25px;
 background-color: transparent;
 
+font-family: 'Roboto';
+color: #FFFFFF;
+font-size: 18px;
+font-weight: 200;
+
+}
+
+.inptPoch:hover{
+    border-width: 2px;
+}
+
+.inptPoch:focus{
+    border-color: #FFFFFF;
+    border-width: 2px;
+    outline: none;
 }
 
 .inptPar {
@@ -29,10 +44,25 @@ height: 40px;
 left: 25px;
 top: 158px;
 
-border: 2px solid #FFFFFF;
+border: 1px solid #FFFFFF;
 border-radius: 25px;
 background-color: transparent;
 
+font-family: 'Roboto';
+color: #FFFFFF;
+font-size: 18px;
+font-weight: 200;
+
+}
+
+.inptPar:hover{
+    border-width: 2px;
+}
+
+.inptPar:focus{
+    border-color: #FFFFFF;
+    border-width: 2px;
+    outline: none;
 }
 
 .auth__title {
@@ -136,7 +166,7 @@ box-sizing: border-box;
 position: absolute;
 width: 107px;
 height: 35px;
-left: 0px;
+left: 90px;
 top: 410px;
 
 border: 1px solid #FFFFFF;
@@ -210,4 +240,9 @@ line-height: 17px;
 color: #FFFFFF;
 
 
+}
+
+.googleIcon{
+    position: relative;
+    top: 3px;
 }

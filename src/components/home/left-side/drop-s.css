@@ -1,0 +1,105 @@
+.all_objects {
+
+
+position: absolute;
+width: 350px;
+height: 218px;
+left: calc(50% - 277px/2 - 0.5px);
+top: 251px;
+}
+
+.text_p {
+    /* Предметы */
+
+position: absolute;
+width: 125px;
+height: 29px;
+left: 23px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 29px;
+
+
+color: #363636;
+}
+
+.text_pDark {
+    /* Предметы */
+
+position: absolute;
+width: 125px;
+height: 29px;
+left: 23px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 29px;
+
+
+color: #EDEDED;
+}
+
+.pos-text {
+    /* Высшая математика */
+
+position: absolute;
+width: 277px;
+height: 29px;
+left: 36px;
+top: 40px;
+
+/* Высшая математика */
+
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+color: #363636;
+
+list-style-type: disc;
+}
+
+.pos-textDark {
+    /* Высшая математика */
+
+position: absolute;
+width: 277px;
+height: 29px;
+left: 36px;
+top: 40px;
+
+/* Высшая математика */
+
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+color: #EDEDED;
+
+list-style-type: disc;
+}
+
+.chevronDownDark{
+color: #EDEDED;
+}
+
+.chevronUpDark{
+    color: #EDEDED;
+    }

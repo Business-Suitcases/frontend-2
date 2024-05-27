@@ -1,0 +1,96 @@
+.modal-picker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    marginRight: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .overlay-picker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .customInputDiv{
+    width: 210px;
+    height: 38px;
+    background: #E6E6E6;
+    border-radius: 8px;
+    justify-content: center;
+    border: 2px solid #E6E6E6;
+  }
+  
+  .customInputDiv::after {
+  border: 2px solid #363636;
+  }
+
+  .customInput{
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Roboto';
+    width: 210px;
+    height: 38px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #E6E6E6;
+    border: none;
+  }
+
+  .customInputDark{
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Roboto';
+    width: 210px;
+    height: 38px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #363636;
+    color: #EDEDED;
+    border: none;
+  }
+
+  .inputGroup{
+    display: flex;
+  }
+  
+  .calendarContainer {
+    position: relative;
+    bottom: -5px;
+    right: 40px;
+    
+  }
+
+
+  .myLabel {
+    font-size: 22px;
+    font-family: 'Roboto';
+    position: relative;
+    left: -210px;
+  }
+
+  .myLabelDark {
+    font-size: 22px;
+    font-family: 'Roboto';
+    position: relative;
+    left: -210px;
+    color: #EDEDED;
+  }
+
+
+  .pickerContainer{
+    z-index: -1;
+  }

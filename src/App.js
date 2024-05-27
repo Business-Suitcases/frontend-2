@@ -1,18 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PrivateRoute from './context/PrivateRoute.js';
 import HomePage from './pages/HomePage';
 import SchedulePage from './pages/SchedulePage';
 import LoginPage from './pages/LoginPage';
+import { AuthProvider } from './context/AuthContext.js';
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage/>} />
-        <Route path="/schedule" element={<SchedulePage/>} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route element={<PrivateRoute />}>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/schedule" element={<SchedulePage />} />
+          </Route>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 
